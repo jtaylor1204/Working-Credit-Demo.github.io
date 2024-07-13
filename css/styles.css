@@ -1,0 +1,9 @@
+
+  .open-sans-#title{
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    color: #002d72;
+    /* font-variation-settings:
+      "wdth" 100; */
+  }
