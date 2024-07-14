@@ -17,34 +17,156 @@
 </head>
 <body>
 
-  <section id="navbar">
-
-    <div class="container-fluid">
-
-
       <!-- Nav Bar -->
-      
+      <section id="navbar">
       <nav class="navbar navbar-expand-lg navbar sticky-top">
-        <div class="container-fluid">
+        <div class="container-fluid d-flex justify-content-around">
           <a class="navbar-brand" href="#">
             <img src="images/WC Logos/WorkingCredit_Logo_Only_Color_fnl_120123.png" alt="Logo" width="100" height="50" class="d-inline-block align-text-top">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse d-flex justify-content-center"" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              <a class="nav-link" href="#">About Us</a>
               <a class="nav-link" href="#">For Participants</a>
               <a class="nav-link" href="#">For Partners</a>
               <a class="nav-link" href="#">Our Impact</a>
-              <a class="nav-link" href="#">Build With Us!</a>
+              <a class="nav-link" href="#">Build With Us!</a>  
             </div>
+            </div>
+            <div class= "d-flex justify-content-end">
+              <button type="button" class="btn donate">Donate</button>
+            </div>
+            <div class= "d-flex justify-content-end">
+              <button type="button" class="btn contacts">Sign Up</button>
+            </div>
+            
           </div>
         </div>
       </nav>
+    </section>
+    
+    <!-- Above the Fold -->
+  <Section id ="above-the-fold">
+    <div class="container">
+      <div class="container text-left">
+        <div class="row">
+          <div class="col-6 about">
+            <h1 class="about-heading">Build Credit, Build Power.</h1>
+            <p>Our mission is to partner with individuals and communities to interrupt the effects of structural racism by providing credit building education, 
+              one-on-one counseling, and access to the products people need to thrive financially.</p>
+            <button type="button" class="btn btn-dark btn-lg download-button">
+            <i class="fa-brands fa-apple"></i> Who We Are</button>
+            <button type="button" class="btn btn-outline-light btn-lg download-button">
+            <i class="fa-brands fa-google-play"></i> What We Do</button>
+          </div>
+          <div class="col-6">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images/Participant Photos/IMG_6504.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Participant Photos/IMG_6513.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <video src="images/Participant Photos/IMG_6658.mp4" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/Participant Photos/IMG_9344.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>   
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <!-- Title -->
+</Section>
+
+<section id="pricing">
+
+  <h2 class="pricing-heading">A Plan for Every Dog's Needs</h2>
+  <p class="pricing-text">Simple and affordable price plans for your and your dog.</p>
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Chihuahua</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">Free</h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>5 Matches Per Day</li>
+                <li>10 Messages Per Day</li>
+                <li>Unlimited App Usage</li>
+                <li class= "hidden">place</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign Up for Free</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Labrador</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$49<small class="text-muted fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Unlimited Matches</li>
+                <li>Unlimited Messages</li>
+                <li>Unlimited App Usage</li>
+                <li class= "hidden">place</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Sign Up</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Mastiff</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$99<small class="text-muted fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Priority Listing</li>
+                <li>Unlimited Matches</li>
+                <li>Unlimited Messages</li>
+                <li>Unlimited App Usage</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+</section>
+
+
+<!-- Call to Action -->
+
+<section id="cta">
+<div class="container-fluid">
+  <h2 class="cta-text">Find the True Love of Your Dog's Life Today.</h2>
+  <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+  <button type="button" class="btn btn-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>
+</div>
+
+</section>
 
     
 

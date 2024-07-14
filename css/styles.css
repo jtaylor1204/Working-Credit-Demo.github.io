@@ -1,9 +1,57 @@
+/* Navbar Styles */
 
-  .open-sans-#title{
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    color: #002d72;
-    /* font-variation-settings:
-      "wdth" 100; */
-  }
+#navbar-nav{
+  margin: auto !important;
+  width: 50% !important;
+}
+   
+.nav-link{
+font-family: "Open Sans", sans-serif;
+color: #002d72 !important;
+font-weight: 500 !important;
+}
+
+.donate{
+  margin-right: 25% !important;
+  background-color: #009cde !important;
+}
+
+.contacts{
+  outline-color: #f6be00 !important;
+}
+
+.btn{
+  font-family: "Open Sans", sans-serif !important;
+}
+/* Above the Fold */
+.about{
+  background-color: #D4F1F4 ;
+  width: 600px;
+}
+.about-heading{
+  font-size: 50px;
+}
+#above-the-fold{
+  padding-top: 5%;
+}
+
+#above-the-fold h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#above-the-fold p{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+#carousel-bg{
+  
+}
+
+/* Images */
+.carousel-inner{
+  width:600px!important;
+  height: 500px !important;
+}
