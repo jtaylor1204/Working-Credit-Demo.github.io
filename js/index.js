@@ -13,14 +13,69 @@ $(document).ready(function () {
 });
 
 // navbar function
-// var t = 0;
-// $(window).scroll(function () {
-//     var nTop = $("#navbar").offset().top - window.innerHeight;
-//     if (t == 0 && $(window).scrollTop() > nTop) {
-        
-//     }
-   
-// });
+$(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar");
+      var $navText = $(".nav-link");
+      var $navImg = $(".nav-img");
+      var $whiteLogo = $(".scrolling");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      $navText.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      $navImg.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      $whiteLogo.toggleClass('notScrolled', $(this).scrollTop() < $nav.height());
+    });
+  });
+
+// Build Word Changes
+let i = 0;
+
+const randomizeText = () => {
+  const phrase = document.querySelector('.build-word');
+  const compStyles = window.getComputedStyle(phrase);
+  const animation = compStyles.getPropertyValue('animation');
+  const animationTime = parseFloat(animation.match(/\d*[.]?\d+/)) * 1000;
+  
+  const phrases = ['power.', 'options.', 'wealth.', 'opportunity.', 'success.', 'prosperity.', 'freedom.', 'security.', 'hope.', 'peace.', 'futures.'];
+  
+  i = randomNum(i, phrases.length);
+  const newPhrase = phrases[i];
+  const max = newPhrase[10];
+  
+  setTimeout(() => {
+    phrase.textContent = newPhrase;
+  }, 400); // time to allow opacity to hit 0 before changing word
+}
+
+const randomNum = (num, max) => {
+  let j = Math.floor(Math.random() * max);
+  
+  // ensure diff num every time
+  if (num === j) {
+    return newPhrase[1];  
+  } else {
+    return j;
+  }
+}
+
+const getAnimationTime = () => {
+  const phrase = document.querySelector('.build-word');
+  const compStyles = window.getComputedStyle(phrase);
+  let animation = compStyles.getPropertyValue('animation');
+  
+  // firefox support for non-shorthand property
+  animation != "" ? animation : animation = compStyles.getPropertyValue('-moz-animation-duration');
+  
+    // webkit support for non-shorthand property
+  animation != "" ? animation : animation = compStyles.getPropertyValue('-webkit-animation-duration');
+  
+  
+  const animationTime = parseFloat(animation.match(/\d*[.]?\d+/)) * 1000;
+  return animationTime;
+}
+
+randomizeText();
+setInterval(randomizeText, getAnimationTime());
+
 
 
 // Numbers functions
@@ -62,7 +117,7 @@ $(window).scroll(function () {
         //   $(".navbar").style.backgroundColor = "#002d72";
         a = 1;
         
-    }
+    }    
    
 });
 

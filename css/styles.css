@@ -5,12 +5,18 @@
 
 /* Navbar Styles */
 #navbar{
-  padding-top: 3%;
+  padding: 3%;
 }
-  
-/* .navbar{
-  background-color: #f6be00;
+
+/* #navbar .container-fluid{
+  padding-left: 5%;
+  padding-right: 5%;
 } */
+  
+.navbar.scrolled{
+  background-color: #002d72;
+  transition: background-color 200ms linear;
+}
 #navbar-nav{
   margin: auto !important;
   width: 50% !important;
@@ -20,6 +26,19 @@
 font-family: "Open Sans", sans-serif;
 color: #002d72 !important;
 font-weight: 500 !important;
+}
+.nav-link.scrolled{
+  color: #fff !important;
+}
+
+.nav-img.scrolled{
+  display: none;
+  visibility: hidden;
+}
+
+.scrolling.notScrolled{
+  display: none;
+  visibility: hidden;
 }
 
 .donate{
@@ -48,7 +67,7 @@ font-weight: 500 !important;
   color:#002d72;
 }
 
-.about-power{
+.build-word{
   color:#002d72;
 }
 
@@ -69,6 +88,39 @@ font-weight: 500 !important;
   font-weight: 500;
   font-size: 20px;
 }
+
+.build-word{
+  display: inline-block;
+/*   transition: all 1.25s; */
+  animation: slidedown 4s infinite;
+  -webkit-animation: slidedown 4s infinite;
+  -moz-animation: slidedown 4s infinite;
+}
+
+@keyframes slidedown {
+  0% {
+    opacity: 50;
+  }
+  
+  5% {
+    opacity: 0;
+    transform: translateY(1em);
+  }
+  
+  7% {
+    transform: translateY(-1em);
+  }
+  
+  10% {
+    opacity: 0;
+  }
+  
+  20% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
 
 /* About Us */
 #hook{
