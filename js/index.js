@@ -19,10 +19,14 @@ $(function () {
       var $navText = $(".nav-link");
       var $navImg = $(".nav-img");
       var $whiteLogo = $(".scrolling");
+      // var $lightButton = $(".scroll");
+      // var $darkButton = $(".btn donate");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       $navText.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       $navImg.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       $whiteLogo.toggleClass('notScrolled', $(this).scrollTop() < $nav.height());
+      // $lightButton.toggleClass('notScrolled', $(this).scrollTop() < $nav.height());
+      // $darkButton.toggleClass('scrolled', $(this).scrollTop() < $nav.height());
     });
   });
 
@@ -108,19 +112,30 @@ $(window).scroll(function () {
                         $this.text(
                             Math.ceil(this.countNum).toLocaleString("en")
                         );
-                        //alert('finished');
+                      
                     }
                 }
             );
             
         });
-        //   $(".navbar").style.backgroundColor = "#002d72";
+       
         a = 1;
         
     }    
    
 });
 
+// Problem-Solution Carousel
+
+// $(document).ready(function () {
+//   let image =  $('.research-img');
+//  image.hover(function (){
+
+//       $('#workCarousel').toggleClass('stop');
+      
+
+//   });
+// });
 
 
 

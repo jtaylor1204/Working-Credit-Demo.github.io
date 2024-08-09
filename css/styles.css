@@ -45,6 +45,14 @@ font-weight: 500 !important;
   margin-right: 25% !important;
   background-color: #009cde !important;
 }
+/* .donate.scrolled{
+  display: none;
+  visibility: hidden;
+}
+.scroll.scrolled{
+  margin-right: 25% !important;
+  background-color: #f6be00 !important;
+} */
 
 .contacts{
   outline-color: #f6be00 !important;
@@ -53,6 +61,7 @@ font-weight: 500 !important;
 .btn{
   font-family: "Open Sans", sans-serif !important;
 }
+
 /* Above the Fold */
 .about{
   
@@ -228,6 +237,44 @@ body {
   filter: brightness(0.8) grayscale(0.6) contrast(1.2) blur(10px);
 }
 
+/* Problem/Solution */
+#problem{
+  padding-bottom:  8%;
+  padding-top:  3%;
+}
+
+#problem h2{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 65px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.issue-div, .solution-div{
+  border: 10px !important;
+  border-color:#002d72;
+}
+  
+.issue{
+  color:#f6be00;
+}
+.solution{
+  color:#009cde;
+}
+.problem-img{
+  position: absolute;
+  top: 2100px;
+  size: 400px;
+  transform: rotate(5deg);
+  z-index: 1;
+}
+
+#problem img{
+  width: 500px;
+  height: 500px;
+ margin-left: 950px;
+}
+
 /* Testimonials */
 #testimonials{
   background-color: #f6be00;
@@ -338,6 +385,48 @@ border-color:#002d72 !important;
 .subscribe{
   padding-top: 2%;
 }
+
+/* Two-step Page */
+#get-started{
+  padding-top: 3%;
+}
+
+
+.text h1{
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #002d72;
+  font-family: "Montserrat", sans-serif;
+}
+.text h3{
+  font-size: 30px;
+  color: #141414;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+
+.steps h3{
+  font-size: 30px;
+  color: #141414;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.steps p{
+  color: #002d72;
+  font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.steps-img{
+  width: 500;
+  height: 400;
+ }
+
 
 
 
