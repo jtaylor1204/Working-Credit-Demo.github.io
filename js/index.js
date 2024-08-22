@@ -19,13 +19,14 @@ $(function () {
       var $navText = $(".nav-link");
       var $navImg = $(".nav-img");
       var $whiteLogo = $(".scrolling");
-      // var $lightButton = $(".scroll");
-      // var $darkButton = $(".btn donate");
+      var $lightButton = $(".btn-outline-light");
+      var $darkButton = $(".btn-contacts");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       $navText.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       $navImg.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       $whiteLogo.toggleClass('notScrolled', $(this).scrollTop() < $nav.height());
-      // $lightButton.toggleClass('notScrolled', $(this).scrollTop() < $nav.height());
+      $darkButton.toggleClass ('scrolledTop', $(this).scrollTop() > $nav.height());
+      $lightButton.toggleClass('notScrolledTop', $(this).scrollTop() < $nav.height());
       // $darkButton.toggleClass('scrolled', $(this).scrollTop() < $nav.height());
     });
   });

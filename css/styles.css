@@ -40,6 +40,17 @@ font-weight: 500 !important;
   display: none;
   visibility: hidden;
 }
+.btn-contacts.scrolledTop{
+  display: none;
+  visibility: hidden;
+}
+.btn-outline-light.notScrolledTop{
+  display: none;
+  visibility: hidden;
+}
+/* .contact-btn{
+  padding: 2%;
+} */
 
 .donate{
   margin-right: 25% !important;
@@ -54,9 +65,9 @@ font-weight: 500 !important;
   background-color: #f6be00 !important;
 } */
 
-.contacts{
+/* .contacts{
   outline-color: #f6be00 !important;
-}
+} */
 
 .btn{
   font-family: "Open Sans", sans-serif !important;
@@ -80,9 +91,10 @@ font-weight: 500 !important;
   color:#002d72;
 }
 
-#above-the-fold{
+#above-the-fold {
   padding-top: 5%;
-  background-image: linear-gradient(180deg, #f6be00, #009cde ) ;
+  background-image: url('../images/background_img2.png');
+  /* background-image: linear-gradient(180deg, #f6be00, #009cde ) ; */
 }
 
 #above-the-fold h1{
@@ -96,6 +108,9 @@ font-weight: 500 !important;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 20px;
+}
+#above-the-fold .col{
+  padding-bottom: 3%;
 }
 
 .build-word{
@@ -263,8 +278,8 @@ body {
 }
 .problem-img{
   position: absolute;
-  top: 2100px;
-  size: 400px;
+  top: 900px;
+  size: 390px;
   transform: rotate(5deg);
   z-index: 1;
 }
@@ -297,7 +312,7 @@ body {
 /* .testimonial-quote{
   font-family:;
 } */
-.video{
+video{
 border-radius: 10px;
 border-color:#002d72 !important;
 }
