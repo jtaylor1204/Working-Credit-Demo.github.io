@@ -19,7 +19,7 @@ $(function () {
       var $navText = $(".nav-link");
       var $navImg = $(".nav-img");
       var $whiteLogo = $(".scrolling");
-      var $lightButton = $(".btn-outline-light");
+      var $lightButton = $(".lighter");
       var $darkButton = $(".btn-contacts");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       $navText.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
