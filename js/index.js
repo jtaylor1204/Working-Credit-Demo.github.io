@@ -40,7 +40,7 @@ const randomizeText = () => {
   const animation = compStyles.getPropertyValue('animation');
   const animationTime = parseFloat(animation.match(/\d*[.]?\d+/)) * 1000;
   
-  const phrases = ['power.', 'options.', 'wealth.', 'opportunity.', 'success.', 'prosperity.', 'freedom.', 'security.', 'hope.', 'peace.', 'futures.'];
+  const phrases = ['power.', 'options.', 'wealth.','success.', 'prosperity.', 'freedom.', 'security.', 'hope.', 'peace.', 'futures.'];
   
   i = randomNum(i, phrases.length);
   const newPhrase = phrases[i];

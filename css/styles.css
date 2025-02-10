@@ -87,17 +87,21 @@ font-weight: 500 !important;
   background-color: #002d72 !important;
 }
 
-.about-credit{
-  color:#002d72;
+.about-heading{
+  color:#fff;
 }
 
-.build-word{
+/* .about-credit{
   color:#002d72;
-}
+} */
+
+/* .build-word{
+  color:#ffffff;
+} */
 
 #above-the-fold {
   padding-top: 5%;
-  background-image: url('../images/background_img2.png');
+  background-image: url('../images/WC\ Website\ banner.png');
   /* background-image: linear-gradient(180deg, #f6be00, #009cde ) ; */
 }
 
